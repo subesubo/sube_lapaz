@@ -4,7 +4,7 @@ Mapa interactivo y planificador de viajes del transporte público de La Paz y El
 Alto: minibuses, micros, trufis, carrys, buses, **PumaKatari** y **Mi Teleférico**.
 Todo funciona en el navegador (no requiere servidor).
 
-**Ver en vivo:** https://subesubo.github.io/  ← (edita esta línea cuando publiques)
+**Ver en vivo:** https://subesubo.github.io/sube_lapaz/
 
 ## Qué incluye
 
@@ -18,28 +18,34 @@ Todo funciona en el navegador (no requiere servidor).
   arrastrables y enlace compartible.
 - **Móvil:** panel inferior deslizable, pensado para usarse en el teléfono.
 
-## Publicar en GitHub Pages
+## Actualizar el sitio
 
-1. En la organización **subesubo**, crea un repositorio público llamado
-   **`subesubo.github.io`** (ese nombre exacto da la URL más limpia).
-2. Sube `index.html` (y este `README.md`).
-3. **Settings → Pages → Source:** rama `main`, carpeta `/ (root)` → **Save**.
-4. En ~1 minuto estará en **`https://subesubo.github.io/`**.
+El sitio se publica con **GitHub Pages** desde este repositorio
+(`subesubo/sube_lapaz`, rama `main`, carpeta raíz). Para publicar un cambio,
+reemplaza `index.html` y súbelo:
 
-Para actualizar: sube un nuevo `index.html`.
+    git add index.html
+    git commit -m "actualiza el mapa"
+    git push
+
+En ~1–3 minutos el cambio queda en vivo.
+
+> ¿Dominio propio? Puedes agregar uno (p. ej. `sube.bo`) en
+> **Settings → Pages → Custom domain** y apuntar el DNS a GitHub.
 
 ## Datos y créditos
 
-- Mapa base © OpenStreetMap contributors. Búsqueda: Nominatim.
+- Mapa base © OpenStreetMap contributors. Búsqueda de direcciones: Nominatim.
 - Rutas del transporte tradicional: **GAMLP** — red autorizada/registrada,
   extraída de la app municipal «Moviéndonos por La Paz» (instantánea ~2021).
 - PumaKatari: servicio `simon.lapaz.bo` (datos vigentes).
 
 ## Aviso
 
-Proyecto **no oficial**. La red autorizada puede no coincidir con la operación
-real actual. Las rutas informales (minibús/micro/trufi/carry) no tienen paradas
-fijas ni horarios; los tiempos son estimaciones, no horarios reales.
+Proyecto **no oficial**, sin relación con el GAMLP ni los operadores. La red
+autorizada puede no coincidir con la operación real actual. Las rutas informales
+(minibús / micro / trufi / carry) no tienen paradas fijas ni horarios; los
+tiempos y tarifas son estimaciones, no información oficial.
 
 ---
 
